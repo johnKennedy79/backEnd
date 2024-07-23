@@ -1,4 +1,4 @@
-import express, { res } from "express";
+import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 
@@ -14,8 +14,9 @@ const images = [
 ];
 
 app.get("/", function (req, res) {
-  res.json("this is my root");
+  res.json(images);
 });
+
 app.listen(8080, function () {
   console.log("server running on port 8080");
 });
