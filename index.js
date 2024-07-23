@@ -13,7 +13,7 @@ const images = [
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTieybYthzC8kIhcthRwuXPw7bVM_dpsIk4qA&s",
 ];
 
-app.get("/", function (req, res) {
+app.get("/images", function (req, res) {
   res.json(images);
 });
 
